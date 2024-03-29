@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background-color: rgb(93, 237, 230);
+    box-shadow: 0px 5px 70px rgba(0, 0, 0, 0.3);
+}
+
+#nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav h3, #nav i {
+    font-size: 17px;
+    border: 1.5px solid black;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+#nav h1 {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#nav button {
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.4px solid black;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+}
+
+#signup-btn {
+    background-color: orangered;
+    color: white;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin: 40px 60px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* Add this at the end of the existing CSS */
+
+/* Add this CSS at the end of your existing CSS */
+
+/* Add this CSS at the end of your existing CSS */
+
+/* Add this CSS at the end of your existing CSS */
+
+#menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align menu items to the left */
+    padding-left: 20px; /* Add padding for better appearance */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    transform: translateX(-100%); /* Hide menu off-screen initially */
+}
+
+#menu-overlay.show {
+    transform: translateX(0); /* Slide in the menu when it's shown */
+}
+
+#menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px; /* Add margin from top */
+}
+
+#menu-overlay ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+#menu-overlay ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* Add this CSS at the end of your existing CSS */
+
+/* Styles for the form containers */
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+
+/* Styles for the form elements */
+.form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
